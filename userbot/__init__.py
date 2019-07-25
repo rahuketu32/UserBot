@@ -18,28 +18,28 @@ from telethon.sessions import StringSession
 
 load_dotenv("config.env")
 
-# Logger setup:
-CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
 
 
-if CONSOLE_LOGGER_VERBOSE:
-    basicConfig(
-        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-        level=DEBUG,
-    )
-else:
-    basicConfig(
-        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-        level=INFO
-    )
-LOGS = getLogger(__name__)
 
-if version_info[0] < 3 or version_info[1] < 6:
-    LOGS.error(
-        "You MUST have a python version of at least 3.6."
-        " Multiple features depend on this. Bot quitting."
-    )
-    quit(1)
+
+
+   
+        
+        
+    
+
+    
+        
+
+    
+
+
+
+
+
+
+
+
 
 # Check if the config was edited by using the already used variable
 CONFIG_CHECK = os.environ.get("", None)
